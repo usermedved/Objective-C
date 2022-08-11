@@ -2,13 +2,7 @@
 int numberA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
-int max;
-if(numberA > numberB)
-{
-    max = numberA;
-}
-else
-{
-    max = numberB;
-}
+int max = numberA;
+if(numberB > max) max = numberB;
+Console.Write("max = ");
 Console.WriteLine(max);
